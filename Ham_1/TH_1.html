@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  function processConfirm(answer) {
+    let result = "";
+    if (answer) {
+      result = "Số nguyên là số vẫn còn nguyên";
+    } else {
+      result = "Không biết à?? :)) ";
+    }
+    return result;
+  }
+  let confirmAnswer = confirm("Số nguyên là gì?");
+  let theAnswer = processConfirm(confirmAnswer);
+  alert(theAnswer);
+</script>
+</body>
+</html>
