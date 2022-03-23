@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Add New Product</h2>
+<input type="text" id="news">
+<button onclick="clickvao">Add</button>
+<h2>Display All Product</h2>
+<h3>Product Name</h3>
+<div id="flow"></div>
+<div id="buff"></div>
+<script>
+    let flowView = document.getElementById('flow');
+    let buffView = document.getElementById('buff');
+    let input = document.getElementById('news') ;
+    let productList = ['Phones', 'Computers', 'Cars', 'Televisions', 'Refrigerators'] ;
+    shows();
+    function clickvao() {
+        let sp = input.value;
+        productList.push(sp);
+        shows()
+        input.value = "";
+    }
+    function shows() {
+        flowView.innerHTML = productList.length + 'sản phẩm';
+        let belongings = " ";
+        for (let i = 0; i < productList.length; i++) {
+            belongings += productList[i] + '<br>';
+        }
+        buffView.innerHTML = belongings;
+    }
+</script>
+</body>
+</html>

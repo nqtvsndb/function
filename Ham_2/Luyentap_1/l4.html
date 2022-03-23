@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        let index = prompt("Nhập kí tự cần kiểm tra :");
+        let arr = [1, 4, 5, 7, 8, 4, 9, 5, 3, "k", ","];
+        let test = check_arr(index,arr);
+        document.write( "Ký tự trong mảng :" + test);
+        function check_arr(kiemtra,arr2) {
+        let arr1 = "Không có " + [-1];
+        for (let i = 0; i < arr2.length; i++) {
+        if (kiemtra == arr2[i]) {
+        arr1 = arr2[i];
+    }
+    }
+        return arr1;
+    }
+</script>
+</body>
+</html>

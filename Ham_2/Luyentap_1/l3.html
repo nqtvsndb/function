@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function input_number(a, b) {
+        let thamlamso = a + b;
+        if (a > b) {
+            thamlamso = "Not number";
+        }
+        return thamlamso;
+    }
+    let ab  = parseInt(prompt("Hãy nhập a"));
+    let bb  = parseInt(prompt("Nhập vào b"));
+
+    let kq = input_number(ab,bb);
+    alert(kq);
+</script>
+</body>
+</html>
